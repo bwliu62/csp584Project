@@ -49,7 +49,7 @@ public class DetailedNews extends HttpServlet {
 
 		int i =0;
 		for (News news:newsList) {
-			if (!news.getTitle().equals(title) && i < 3) {
+			if (!news.getTitle().equals(title) && i < 6) {
 				pw.print("<li><a href='DetailedNews?Title="+news.getTitle().replaceAll("[^a-zA-Z0-9_-]", "")+"'><img src="+ news.getUrlToImage() +" alt='' width='80' height='80'><p>"+news.getTitle()+"</p></a></li>");
 				i++;
 			}

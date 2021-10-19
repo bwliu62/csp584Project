@@ -53,13 +53,13 @@ public class Home extends HttpServlet {
 		pw.print("<a href='DetailedNews?Title=" + newsList.get(0).getTitle().replaceAll("[^a-zA-Z0-9_-]", "")
 				+ "' class='button'>More Details</a></section></div>");
 		// Other news
-		pw.print("<div class='3u'><section class='sidebar'><header><h2>Other NEWS</h2></header>");
+		//pw.print("<div class='3u'><section class='sidebar'><header><h2>Other NEWS</h2></header>");
 		pw.print("<ul class='style2'>");
 		int i = 0;
 		for (News news : newsList) {
-			if (!news.getTitle().equals(headNews) && i < 3) {
+			if (!news.getTitle().equals(headNews) && i < 6) {
 				pw.print("<li><a href='DetailedNews?Title=" + news.getTitle().replaceAll("[^a-zA-Z0-9_-]", "") + "'><img src=" + news.getUrlToImage()
-						+ " alt='' width='80' height='80'><p>" + news.getTitle() + "</p></a></li>");
+						+ " alt='' width='80' height='80'><p>" + news.getTitle() + "</p></a></li>" );
 				i++;
 			}
 
