@@ -108,7 +108,7 @@
 			margin: 0.5em 0 0 0;
 			padding: 0 0 0.5em 0;
 			text-transform: uppercase;
-			font-size: 1.4em;
+			font-size: 1.2em;
 		}
 		
 	footer
@@ -760,7 +760,7 @@
 	#header
 	{
 		position: relative;
-		background: #FFF;
+		background: beige;
 	}
 
 		#header .container
