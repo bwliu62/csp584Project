@@ -15,7 +15,7 @@ import java.util.Date;
 
 public class ApiUtilities {
     private static String urlPre = "https://maps.googleapis.com/maps/api/geocode/json?&address=";
-    private static String APIKEY = "&key=AIzaSyC1V_mk_-XXKc8e-N1W0N4g6zZRC_YZLMI";
+    private static String APIKEY = "&key=AIzaSyAHnfZFSq_y9Rf14NyCxvjgBLSQS3sN-0Q";
 
     public static ArrayList<News> getHealthNews() {
 

@@ -54,7 +54,7 @@ public class DetailedDoctor extends HttpServlet {
 		pw.println("title: 'Hello World!',");
 		pw.println("});");
 		pw.println("} </script>");
-		pw.println("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyC1V_mk_-XXKc8e-N1W0N4g6zZRC_YZLMI&callback=initMap&libraries=&v=weekly' defer></script>");
+		pw.println("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnfZFSq_y9Rf14NyCxvjgBLSQS3sN-0Q&callback=initMap&libraries=&v=weekly' defer></script>");
 		pw.println("<div class='9u'>");
 		pw.println("<section>");
 		pw.println("<header>");
