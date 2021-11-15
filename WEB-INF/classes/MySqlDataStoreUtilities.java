@@ -53,7 +53,7 @@ public class MySqlDataStoreUtilities {
             getConnection();
             conn.prepareStatement(
                     "INSERT INTO Registration (userId, userName, password, email, usertype, address, locationLat, locationLong, location)"
-					+" VALUES (1,'Tom','tom','tom@gmail.com','customer','215 West Washington, W Washington St, Chicago, IL 60606','41.8828584','-87.6363466','Chicago, IL'),"
+					+" VALUES (1,'user','user','user@gmail.com','customer','215 West Washington, W Washington St, Chicago, IL 60606','41.8828584','-87.6363466','Chicago, IL'),"
 					+" (2,'Bill', 'bill','bill@gmail.com','doctor','3000 N Halsted St Ste 720, Chicago, IL 60657','41.9367044','-87.6519388','Chicago, IL'),"
 					+" (3,'Lily','lily','lily@gmail.com','customer','255 King St, San Francisco, CA 94107','37.7495887','-122.4381021','San Francisco, CA'),"
 					+" (4,'Jason','jason','jason@gmail.com','customer','1700 Newbury Park Dr, San Jose, CA 95133','37.3750217','-121.8650577','San Jose, CA'),"

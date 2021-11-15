@@ -78,8 +78,8 @@ public class RecommandationDoctor extends HttpServlet {
 		pw.println("zoom: 3,");
 		pw.println("center: myLatLng,});");
 
-		//Top 5 Doctor's location base on distance
-		for (int i = 0; i < 5; i++) {
+		//Top 3 Doctor's location base on distance
+		for (int i = 0; i < 3; i++) {
 			Doctor doctor = doctors.get(i);
 			pw.println("new google.maps.Marker({");
 			pw.println("position: { lat: "+ doctor.getLat()   +", lng: "+ doctor.getLongt() +" },");
@@ -90,10 +90,10 @@ public class RecommandationDoctor extends HttpServlet {
 
 		pw.println("}</script>");
 		pw.println("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnfZFSq_y9Rf14NyCxvjgBLSQS3sN-0Q&callback=initMap&libraries=&v=weekly' defer></script>");
-		pw.println("<div class='9u'><section><header><div align='center'><section><h2>Recommandation:Doctor</h2></section></div><hr><table style='width:100% '>");
+		pw.println("<div class='9u'><section><header><div align='center'><section><h2>Doctors near me</h2></section></div><hr><table style='width:100% '>");
 		pw.println("<tr><th>Name</th><th>Department</th><th>Location</th><th>Distance</th><th>Detailed Page</th></tr>");
 
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 3; i++) {
 			Doctor doctor = doctors.get(i);
 			pw.println("<tr>");
 			pw.println("<td>"+ doctor.getRealName()  + "</td>");
