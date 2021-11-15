@@ -34,15 +34,6 @@ public class AjaxUtility {
 	}
 
 	public StringBuffer readdata(String searchId) {
-		// ArrayList<Doctor> doctors;
-		// doctors = viewPartialDoctor(searchId);
-		// data=getData();
-		// for (Doctor doctor : doctors) {
-		// sb.append("<doctor>");
-		// sb.append("<id>" + doctor.getDoctorId() "</id>");
-		// sb.append("<doctorName>" + doctor.getRealName() + "</doctorName>");
-		// sb.append("</doctor>");
-		// }
 		HashMap<String, Doctor> data;
 		data = getData(searchId);
 		Iterator it = data.entrySet().iterator();
@@ -62,26 +53,6 @@ public class AjaxUtility {
 		return sb;
 	}
 
-	// public static ArrayList<Doctor> viewPartialDoctor(String partial) {
-	// 	ArrayList<Doctor> doctors = new ArrayList<>();
-	// 	try {
-	// 		getConnection();
-	// 		Statement stmt = conn.createStatement();
-	// 		String selectDoctorQuery = "select * from Doctordetails where realName like '%" + partial
-	// 				+ "%' or department like '%" + partial + "%';";
-	// 		ResultSet rs = stmt.executeQuery(selectDoctorQuery);
-	// 		while (rs.next()) {
-	// 			doctors.add(new Doctor(rs.getInt("postId"), rs.getInt("doctorId"), rs.getString("realName"),
-	// 					rs.getString("department"), rs.getString("address"), rs.getString("locationLat"),
-	// 					rs.getString("locationLong"), rs.getString("location"), rs.getString("OpenTime"),
-	// 					rs.getString("closeTime"), rs.getString("postTime")));
-	// 		}
-	// 	} catch (Exception e) {
-	// 		System.out.println(e.getMessage());
-
-	// 	}
-	// 	return doctors;
-	// }
 
 	public static HashMap<String, Doctor> getData(String partial) {
 		HashMap<String, Doctor> hm = new HashMap<String, Doctor>();
@@ -98,12 +69,6 @@ public class AjaxUtility {
 						rs.getString("department"), rs.getString("address"), rs.getString("locationLat"),
 						rs.getString("locationLong"), rs.getString("location"), rs.getString("OpenTime"),
 						rs.getString("closeTime"), rs.getString("postTime"));
-
-				// Product product = new
-				// Product(rs.getString("ProductType"),rs.getString("productName"),rs.getDouble("productPrice"),
-				// rs.getString("productManufacturer"),rs.getString("productCondition"),
-				// rs.getDouble("productDiscount"), rs.getInt("productRebate"));
-				// product.setId(rs.getString("productName"));
 				hm.put(rs.getString("realName"), doctor);
 			}
 		} catch (Exception e) {
@@ -111,37 +76,5 @@ public class AjaxUtility {
 		}
 		return hm;
 	}
-	// public static void storeData(HashMap<String,Product> productdata)
-	// {
-	// try
-	// {
-
-	// getConnection();
-
-	// String insertIntoProductQuery = "INSERT INTO
-	// product(productId,productName,image,retailer,productCondition,productPrice,productType,discount)
-	// "
-	// + "VALUES (?,?,?,?,?,?,?,?);";
-	// for(Map.Entry<String, Product> entry : productdata.entrySet())
-	// {
-
-	// PreparedStatement pst = conn.prepareStatement(insertIntoProductQuery);
-	// //set the parameter for each column and execute the prepared statement
-	// pst.setString(1,entry.getValue().getId());
-	// pst.setString(2,entry.getValue().getName());
-	// pst.setString(3,entry.getValue().getImage());
-	// pst.setString(4,entry.getValue().getRetailer());
-	// pst.setString(5,entry.getValue().getCondition());
-	// pst.setDouble(6,entry.getValue().getPrice());
-	// pst.setString(7,entry.getValue().getType());
-	// pst.setDouble(8,entry.getValue().getDiscount());
-	// pst.execute();
-	// }
-	// }
-	// catch(Exception e)
-	// {
-
-	// }
-	// }
 
 }

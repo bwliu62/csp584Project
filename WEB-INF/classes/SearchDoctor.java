@@ -36,7 +36,7 @@ public class SearchDoctor extends HttpServlet {
 		utility.printHtml("Header.html");
 		// pw.println("<script type='text/javascript ' src ='javascript.js'></script>");
 
-		pw.println("<div class='9u'><section><a href=SearchHospital>Search Hospital</a><br><a href=SearchInsurance>Search Insurance</a><br>");
+
 		if (!utility.isLoggedin()) {
 			HttpSession session = request.getSession(true);
 			System.out.println("LogIn: Not");
@@ -53,18 +53,17 @@ public class SearchDoctor extends HttpServlet {
 		pw.println("<form  method='Get' action='SearchDoctor' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or department or location' size='50' name='searchName' onkeyup='doCompletion()' value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
-		pw.println("<button class='btnbuy'>Submit</button>		");
 		pw.println("</form>		");
+
 		pw.println("<table id='table1' style='width:80%'>		");
-		pw.println("<tr><td>&nbsp;</td><td><b>DoctorName </b></td><td><b>Department </b></td><td><b>Location </b></td><td><b>DeatailPage</b></td></tr>		");
+		pw.println("<tr><td>&nbsp;</td><td bgcolor=#FF00FF><b>DoctorName </b></td><td bgcolor=#FF00FF><b>Department </b></td><td bgcolor=#FF00FF><b>Make Reservation</b></td></tr>		");
 		
 		for (Doctor doctor : doctors) {
 			pw.println("<tr><td>&nbsp;</td>		");
-			pw.println("<td>"+doctor.getRealName()+"</td>");
-			pw.println("<td>"+  doctor.getDepartment()    +"</td>		");
-			pw.println("<td>"+  doctor.getLocation() + "</td>");
-			pw.println("<td>");
-			pw.println("<a href=DetailedDoctor?postId="+  doctor.getPostId()  +" >Detail Page</a> ");
+			pw.println("<td bgcolor=#00FFFF>"+doctor.getRealName()+"</td>");
+			pw.println("<td bgcolor=#00FFFF>"+  doctor.getDepartment()    +"</td>		");
+			pw.println("<td bgcolor=#00FFFF>");
+			pw.println("<a href=DetailedDoctor?postId="+  doctor.getPostId()  +" >Click Here</a> ");
 			pw.println("</td>");
 			pw.println("</tr>");
 		}
@@ -72,6 +71,7 @@ public class SearchDoctor extends HttpServlet {
 
 
 		pw.println("</table><article></section></div>");
+		pw.println("<div class='9u'><section><a href=SearchHospital>Search Hospital</a><br><a href=SearchInsurance>Search Insurance</a><br>");
 
 		utility.printHtml("Footer.html");
 

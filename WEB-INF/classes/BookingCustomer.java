@@ -32,7 +32,7 @@ public class BookingCustomer extends HttpServlet {
 
 
 		pw.println("<div class='6u'><section><header><h2>Review Booking</h2><span class='byline'></span> <br><hr><header></section>");
-		pw.println("<div><table><tr><th>BookId</th><th>Customer Name</th><th>Provider Name</th><th>Provider Type</th><th>Date</th><th>Time</th><th>Note</th><th>AddNote</th><th>Cancel</th></tr>");
+		pw.println("<div><table><tr><th>BookId</th><th>Customer Name</th><th>Provider Name</th><th>Provider Type</th><th>Date</th><th>Time</th><th>Cancel</th></tr>");
 		for (Book book : bookList) {
 			pw.println("<form method='POST' action='BookingCustomer'><tr>");
 			pw.println("<td>"+ book.getId() + "</td>");
@@ -40,9 +40,7 @@ public class BookingCustomer extends HttpServlet {
 			pw.println("<td>"+ book.getProvideName() + "</td>");
 			pw.println("<td>"+ book.getProviderType() + "</td>");
 			pw.println("<td>"+ book.getAppointmentDate()+ "</td>");
-			pw.println("<td>"+ book.getTime()+ "</td>");
-			pw.println("<td>"+ book.getNote() + "</td>");
-			pw.println("<td><a href=AddNote?id="+book.getId()+">Add note</td>");
+			pw.println("<td>"+ book.getTime()+ "</td>");;
 			pw.println("<td><input type='submit' class='btnbuy' name='cancel' value='"+book.getId()+"'style='float: right;height: 20px margin: 20px; margin-right: 10px;'></input></td></tr></form>");
 
 		}
