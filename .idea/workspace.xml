@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="small change of doctor table&#10;remove addnote function at frontend">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_18_2021_7_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_18_2021_7_15_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="UI change for SearchDoctor.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-table.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +13,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="1efc7074-37cf-4ecc-aee4-815452b9f018" />
   </component>
   <component name="ProjectId" id="1zkWLdF9qdvGrpw2BMVXlDacrgQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -85,7 +85,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636987185881</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UI change for SearchDoctor.java">
+      <created>1637022372045</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1637022372045</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -109,13 +116,26 @@
     <MESSAGE value="Fixed near-me function" />
     <MESSAGE value="Fixed other map issues" />
     <MESSAGE value="small change of doctor table&#10;remove addnote function at frontend" />
-    <option name="LAST_COMMIT_MESSAGE" value="small change of doctor table&#10;remove addnote function at frontend" />
+    <MESSAGE value="UI change for SearchDoctor.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="UI change for SearchDoctor.java" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="-1450" y="71" key="CommitChangelistDialog2" timestamp="1637022369019">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1450" y="71" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022369019" />
     <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637015265700">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637015265700" />
+    <state x="-1111" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1637022388303">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1111" y="432" key="Github.Dialog.Accounts.Choose/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022388303" />
+    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2" timestamp="1637022379509">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022379509" />
     <state x="-879" y="332" width="596" height="536" key="find.popup" timestamp="1637019708120">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
