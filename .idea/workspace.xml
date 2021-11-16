@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="small change of doctor table&#10;remove addnote function at frontend">
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_18_2021_7_15_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_10_18_2021_7_15_PM__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/BookingCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/BookingCustomer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,5 +110,15 @@
     <MESSAGE value="Fixed other map issues" />
     <MESSAGE value="small change of doctor table&#10;remove addnote function at frontend" />
     <option name="LAST_COMMIT_MESSAGE" value="small change of doctor table&#10;remove addnote function at frontend" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637015265700">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637015265700" />
+    <state x="-879" y="332" width="596" height="536" key="find.popup" timestamp="1637019708120">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-879" y="332" width="596" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637019708120" />
   </component>
 </project>

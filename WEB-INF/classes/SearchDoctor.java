@@ -44,25 +44,29 @@ public class SearchDoctor extends HttpServlet {
 			HttpSession session = request.getSession();
 			User user = utility.getUser();
 			if (user.getUsertype().equals("doctor")) {
-				pw.println("<a href='PostDoctor'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Post information</button></a>");
+				pw.println("<div class='updateDoctor' style='height:0px'><b>Add new doctor</b>");
+				pw.println("<div> <a href='PostDoctor'><button type='button' class='btn btn-primary' style='background-color: #009879;  border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Post information</button></a></div>");
+				pw.println("</div>");
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		pw.println("<section><article id='doctorsearch'><hr style='width: 95%'><h2 style='font-size: 25px;'> Search Doctor</h2><hr style='width: 95%'>");
+		pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch' ><hr style='width: 82%'><h2 style='font-size: 25px;'> Search Doctor</h2><hr style='width: 82%'>");
 
 		pw.println("<form  method='Get' action='SearchDoctor' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or department or location' size='50' name='searchName' onkeyup='doCompletion()' value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
 		pw.println("</form>		");
 
-		pw.println("<table id='table1' style='width:80%'>		");
-		pw.println("<tr><td>&nbsp;</td><td bgcolor=#FF00FF><b>DoctorName </b></td><td bgcolor=#FF00FF><b>Department </b></td><td bgcolor=#FF00FF><b>Make Reservation</b></td></tr>		");
-		
+		pw.println("<table id='table1' style='width:82%; height:600px; display: inline-block; overflow: auto; border-collapse: collapse;'>");
+//		pw.println("<tr><td>&nbsp;</td><th><div>DoctorName </div></th><th ><div >Department </div></th><th><div>Make Reservation</div></th></tr>		");
+		pw.println("<tr><th><b>DoctorName </b></th><th ><b >Department </b></th><th><b>Make Reservation</b></th></tr>		");
+
 		for (Doctor doctor : doctors) {
-			pw.println("<tr><td>&nbsp;</td>		");
-			pw.println("<td bgcolor=#00FFFF>"+doctor.getRealName()+"</td>");
-			pw.println("<td bgcolor=#00FFFF>"+  doctor.getDepartment()    +"</td>		");
-			pw.println("<td bgcolor=#00FFFF>");
+//			pw.println("<tr><td>&nbsp;</td>		");
+			pw.println("<tr>");
+			pw.println("<td>"+doctor.getRealName()+"</td>");
+			pw.println("<td>"+  doctor.getDepartment()    +"</td>		");
+			pw.println("<td>");
 			pw.println("<a href=DetailedDoctor?postId="+  doctor.getPostId()  +" >Click Here</a> ");
 			pw.println("</td>");
 			pw.println("</tr>");

@@ -986,4 +986,23 @@
 		color: #333 !important;
 	}
 
+	#table1 {
+		width:80%;
+		display: inline-block;
+		overflow: auto;
+	}
+	#table1 th div{
+		position: absolute;
+	}
 
+	#table1 {
+		border-collapse: collapse;
+	}
+	#table1 tr:nth-child(even) { background: #EEE;}
+
+/*	table  { margin-top:  20px; display: inline-block; overflow: auto; }*/
+/*th div { margin-top: -20px; position: absolute; }*/
+
+/*!* design *!*/
+/*table { border-collapse: collapse; }*/
+/*tr:nth-child(even) { background: #EEE; }*/
