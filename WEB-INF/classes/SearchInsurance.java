@@ -48,18 +48,18 @@ public class SearchInsurance extends HttpServlet {
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		pw.println("<section><article id='insurancesearch'><hr style='width: 95%'><h2 style='font-size: 25px;'> Search Insurance</h2><hr style='width: 95%'>");
+		pw.println("<section style='margin-left: 136px;'><article id='insurancesearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Insurance</h2><hr style='width: 80%'>");
 
 		pw.println("<form  method='Get' action='SearchInsurance' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or location' size='50' name='searchName'  value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
-		pw.println("<button class='btnbuy'>Submit</button>		");
-		pw.println("</form>		");
-		pw.println("<table id='table1' style='width:80%'>		");
-		pw.println("<tr><td>&nbsp;</td><td><b>InsuranceName </b></td><td><b>Location </b></td><td><b>DeatailPage</b></td></tr>		");
+		pw.println("<button class='btnbuy'>Submit</button>");
+		pw.println("</form>");
+		pw.println("<table id='table1' style='width:62%; height:400px; display: inline-block; overflow: auto; border-collapse: collapse;'>");
+		pw.println("<tr><th><b>InsuranceName </b></th><th><b>Location </b></th><th><b>DeatailPage</b></th></tr>		");
 		
 		for (Insurance insurance : insurances) {
-			pw.println("<tr><td>&nbsp;</td>		");
+			pw.println("<tr>");
 			pw.println("<td>"+insurance.getInsuranceName()+"</td>");
 			pw.println("<td>"+  insurance.getLocation() + "</td>");
 			pw.println("<td>");

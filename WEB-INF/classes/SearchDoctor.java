@@ -55,6 +55,7 @@ public class SearchDoctor extends HttpServlet {
 		pw.println("<form  method='Get' action='SearchDoctor' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or department or location' size='50' name='searchName' onkeyup='doCompletion()' value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
+		pw.println("<button class='btnbuy'>Submit</button>");
 		pw.println("</form>		");
 
 		pw.println("<table id='table1' style='width:82%; height:600px; display: inline-block; overflow: auto; border-collapse: collapse;'>");

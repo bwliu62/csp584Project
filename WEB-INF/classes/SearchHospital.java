@@ -48,18 +48,18 @@ public class SearchHospital extends HttpServlet {
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		pw.println("<section><article id='hospitalsearch'><hr style='width: 95%'><h2 style='font-size: 25px;'> Search Hospital</h2><hr style='width: 95%'>");
+		pw.println("<section style='margin-left: 136px;'><article id='hospitalsearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Hospital</h2><hr style='width: 80%'>");
 
 		pw.println("<form  method='Get' action='SearchHospital' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or location' size='50' name='searchName'  value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
 		pw.println("<button class='btnbuy'>Submit</button>		");
-		pw.println("</form>		");
-		pw.println("<table id='table1' style='width:80%'>		");
-		pw.println("<tr><td>&nbsp;</td><td><b>HospitalName </b></td><td><b>Location </b></td><td><b>DeatailPage</b></td></tr>		");
+		pw.println("</form>");
+		pw.println("<table id='table1' style='width:71%; height:500px; display: inline-block; overflow: auto; border-collapse: collapse;'>");
+		pw.println("<tr><th><b>HospitalName </b></th><th><b>Location </b></th><th><b>DeatailPage</b></th></tr>		");
 		
 		for (Hospital hospital : hospitals) {
-			pw.println("<tr><td>&nbsp;</td>		");
+			pw.println("<tr>");
 			pw.println("<td>"+hospital.getHospitalName()+"</td>");
 			pw.println("<td>"+  hospital.getLocation() + "</td>");
 			pw.println("<td>");

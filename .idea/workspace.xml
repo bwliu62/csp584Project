@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="UI change for SearchDoctor.java">
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="UI change for Trending.java. &#10;update all table UIs.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Header2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637022372045</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="UI change for Trending.java. &#10;update all table UIs.">
+      <created>1637023378215</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1637023378215</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -117,13 +130,14 @@
     <MESSAGE value="Fixed other map issues" />
     <MESSAGE value="small change of doctor table&#10;remove addnote function at frontend" />
     <MESSAGE value="UI change for SearchDoctor.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="UI change for SearchDoctor.java" />
+    <MESSAGE value="UI change for Trending.java. &#10;update all table UIs." />
+    <option name="LAST_COMMIT_MESSAGE" value="UI change for Trending.java. &#10;update all table UIs." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-1450" y="71" key="CommitChangelistDialog2" timestamp="1637022369019">
+    <state x="-1450" y="71" key="CommitChangelistDialog2" timestamp="1637023376295">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1450" y="71" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022369019" />
+    <state x="-1450" y="71" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637023376295" />
     <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637015265700">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
@@ -132,13 +146,13 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="-1111" y="432" key="Github.Dialog.Accounts.Choose/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022388303" />
-    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2" timestamp="1637022379509">
+    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2" timestamp="1637023379599">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022379509" />
-    <state x="-879" y="332" width="596" height="536" key="find.popup" timestamp="1637019708120">
+    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637023379599" />
+    <state x="-879" y="332" width="596" height="536" key="find.popup" timestamp="1637026574654">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="-879" y="332" width="596" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637019708120" />
+    <state x="-879" y="332" width="596" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637026574654" />
   </component>
 </project>
