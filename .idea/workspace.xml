@@ -1,46 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="reduce RecommandationDoctor number to three">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.vs/slnx.sqlite-journal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WEB-INF/classes/describe.class" afterDir="false" />
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="change time">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/AddNote.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/AddNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/describe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/AutoCompleteServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/AutoCompleteServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/AutoCompleteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/AutoCompleteServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedHospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedHospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedInsurance.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InsurancePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InsurancePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorRecommenderUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorRecommenderUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/FindDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/FindDoctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/FindDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/FindDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MongoDBDataStoreUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MongoDBDataStoreUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MongoDBDataStoreUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MongoDBDataStoreUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PostDoctorReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PostDoctorReview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PostDoctorReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PostDoctorReview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PostHospitalReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PostHospitalReview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PostHospitalReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PostHospitalReview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PostInsuranceReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PostInsuranceReview.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PostInsuranceReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PostInsuranceReview.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommanderRate.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommanderRate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommanderRate.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommanderRate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Header2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchHospital.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/SearchInsurance.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/TrendingDoctor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,9 +18,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="1efc7074-37cf-4ecc-aee4-815452b9f018" />
   </component>
   <component name="ProjectId" id="1zkWLdF9qdvGrpw2BMVXlDacrgQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -70,6 +36,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -136,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637023378215</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="change time">
+      <created>1637082023137</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1637082023137</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -162,28 +136,7 @@
     <MESSAGE value="small change of doctor table&#10;remove addnote function at frontend" />
     <MESSAGE value="UI change for SearchDoctor.java" />
     <MESSAGE value="UI change for Trending.java. &#10;update all table UIs." />
-    <option name="LAST_COMMIT_MESSAGE" value="UI change for Trending.java. &#10;update all table UIs." />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="-1450" y="71" key="CommitChangelistDialog2" timestamp="1637023376295">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1450" y="71" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637023376295" />
-    <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1637015265700">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1828" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637015265700" />
-    <state x="-1111" y="432" key="Github.Dialog.Accounts.Choose" timestamp="1637022388303">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1111" y="432" key="Github.Dialog.Accounts.Choose/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637022388303" />
-    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2" timestamp="1637023379599">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-1368" y="239" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637023379599" />
-    <state x="-879" y="332" width="596" height="536" key="find.popup" timestamp="1637026574654">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state x="-879" y="332" width="596" height="536" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637026574654" />
+    <MESSAGE value="change time" />
+    <option name="LAST_COMMIT_MESSAGE" value="change time" />
   </component>
 </project>

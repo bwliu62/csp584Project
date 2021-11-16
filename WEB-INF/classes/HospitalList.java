@@ -12,11 +12,11 @@ import javax.servlet.http.HttpSession;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
 
-@WebServlet("/SearchInsurance")
+@WebServlet("/HospitalList")
 
 
 
-public class SearchInsurance extends HttpServlet {
+public class HospitalList extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html");
@@ -24,46 +24,46 @@ public class SearchInsurance extends HttpServlet {
 		Utilities utility = new Utilities(request, pw);
 
 
-		ArrayList<Insurance> insurances;
+		ArrayList<Hospital> hospitals;
 
 		if (request.getParameter("searchName") != null) {
-			insurances = MySqlDataStoreUtilities.viewPartialInsurance( request.getParameter("searchName"));
+			hospitals = MySqlDataStoreUtilities.viewPartialHospital( request.getParameter("searchName"));
 		} else {
-			insurances = MySqlDataStoreUtilities.viewInsurance();
+			hospitals = MySqlDataStoreUtilities.viewHospital();
 		}
 
 
 		utility.printHtml("Header.html");
 		// pw.println("<script type='text/javascript ' src ='javascript.js'></script>");
 
-		pw.println("<div class='9u'><section><a href=SearchDoctor>Search Doctor</a><br><a href=SearchHospital>Search Hospital</a><br>");
+		pw.println("<div class='9u'><section><a href=DoctorList>Search Doctor</a><br><a href=InsuranceList>Search Insurance</a><br>");
 		if (!utility.isLoggedin()) {
 			HttpSession session = request.getSession(true);
 			System.out.println("LogIn: Not");
 		} else {
 			HttpSession session = request.getSession();
 			User user = utility.getUser();
-			if (user.getUsertype().equals("insurance company")) {
-				pw.println("<a href='PostInsurance'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Post information</button></a>");
+			if (user.getUsertype().equals("hospital company")) {
+				pw.println("<a href='PostHospital'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Post information</button></a>");
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		pw.println("<section style='margin-left: 136px;'><article id='insurancesearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Insurance</h2><hr style='width: 80%'>");
+		pw.println("<section style='margin-left: 136px;'><article id='hospitalsearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Hospital</h2><hr style='width: 80%'>");
 
-		pw.println("<form  method='Get' action='SearchInsurance' >");
+		pw.println("<form  method='Get' action='HospitalList' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or location' size='50' name='searchName'  value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
-		pw.println("<button class='btnbuy'>Submit</button>");
+		pw.println("<button class='btnbuy'>Submit</button>		");
 		pw.println("</form>");
-		pw.println("<table id='table1' style='width:62%; height:400px; display: inline-block; overflow: auto; border-collapse: collapse;'>");
-		pw.println("<tr><th><b>InsuranceName </b></th><th><b>Location </b></th><th><b>DeatailPage</b></th></tr>		");
+		pw.println("<table id='table1' style='width:71%; height:500px; display: inline-block; overflow: auto; border-collapse: collapse;'>");
+		pw.println("<tr><th><b>HospitalName </b></th><th><b>Location </b></th><th><b>DeatailPage</b></th></tr>		");
 		
-		for (Insurance insurance : insurances) {
+		for (Hospital hospital : hospitals) {
 			pw.println("<tr>");
-			pw.println("<td>"+insurance.getInsuranceName()+"</td>");
-			pw.println("<td>"+  insurance.getLocation() + "</td>");
+			pw.println("<td>"+hospital.getHospitalName()+"</td>");
+			pw.println("<td>"+  hospital.getLocation() + "</td>");
 			pw.println("<td>");
-			pw.println("<a href=InsurancePage?postId="+  insurance.getPostId()  +" >Detail Page</a> ");
+			pw.println("<a href=HospitalPage?postId="+  hospital.getPostId()  +" >Detail Page</a> ");
 			pw.println("</td>");
 			pw.println("</tr>");
 		}
@@ -77,8 +77,8 @@ public class SearchInsurance extends HttpServlet {
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		if (request.getParameter("insurance").equals("Create")) {
-			String insuranceId = request.getParameter("insuranceId");
+		if (request.getParameter("hospital").equals("Create")) {
+			String hospitalId = request.getParameter("hospitalId");
 			String realName = request.getParameter("realName");
 			// String department = request.getParameter("department");
 			String address = request.getParameter("address");
@@ -94,7 +94,7 @@ public class SearchInsurance extends HttpServlet {
 			String closeTime = request.getParameter("closeTime");
 			String postTime = request.getParameter("postTime");
 
-			MySqlDataStoreUtilities.insertInsurance(Integer.parseInt(insuranceId) , realName, address, lat, longt, location, openTime, closeTime, postTime);
+			MySqlDataStoreUtilities.insertHospital(Integer.parseInt(hospitalId) , realName, address, lat, longt, location, openTime, closeTime, postTime);
 		} 
 		
 

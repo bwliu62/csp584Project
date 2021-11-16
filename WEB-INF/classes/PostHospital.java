@@ -29,7 +29,7 @@ public class PostHospital extends HttpServlet {
 		User user = utility.getUser();
 		utility.printHtml("Header.html");
 		pw.println("<div class='9u'><section><header><h2>Post Hospital</h2></header>");
-		pw.println("<form method='post' action='SearchHospital'>");
+		pw.println("<form method='post' action='HospitalList'>");
 		pw.println("<table style='width:100%'><tr><td><h3>Real Name</h3></td><td>");
 
 		pw.println("<input type='text' name='realName' value='' class='input' required></input></td></tr>");
