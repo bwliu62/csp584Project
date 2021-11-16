@@ -94,7 +94,7 @@ public class AutoCompleteServlet extends HttpServlet {
 				if ((searchId != null) && doc != null) 
 				{
 					request.setAttribute("data",doc);	
-					RequestDispatcher rd=context.getRequestDispatcher("/DetailedDoctor");
+					RequestDispatcher rd=context.getRequestDispatcher("/DoctorPage");
 					rd.forward(request,response);
 				}
 			}

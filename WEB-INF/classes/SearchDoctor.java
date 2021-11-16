@@ -68,7 +68,7 @@ public class SearchDoctor extends HttpServlet {
 			pw.println("<td>"+doctor.getRealName()+"</td>");
 			pw.println("<td>"+  doctor.getDepartment()    +"</td>		");
 			pw.println("<td>");
-			pw.println("<a href=DetailedDoctor?postId="+  doctor.getPostId()  +" >Click Here</a> ");
+			pw.println("<a href=DoctorPage?postId="+  doctor.getPostId()  +" >Click Here</a> ");
 			pw.println("</td>");
 			pw.println("</tr>");
 		}

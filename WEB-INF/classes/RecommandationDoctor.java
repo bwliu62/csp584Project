@@ -100,7 +100,7 @@ public class RecommandationDoctor extends HttpServlet {
 			pw.println("<td>"+  doctor.getDepartment() +"</td>");
 			pw.println("<td>"+ doctor.getLocation()  +"</td>");
 			pw.println("<td>" +  Double.parseDouble(String.format("%.2f",  getDistance(user.getLat(), user.getLongt(), doctor.getLat()  ,  doctor.getLongt())    ))      +" miles</td>");
-			pw.println("<td><a href=DetailedDoctor?postId="+  doctor.getPostId()  +" >Detail Page</a> </td>");
+			pw.println("<td><a href=DoctorPage?postId="+  doctor.getPostId()  +" >Detail Page</a> </td>");
 			pw.println("</tr>");			
 		}		
 		pw.println("</table>");

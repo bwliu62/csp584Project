@@ -63,7 +63,7 @@ public class SearchInsurance extends HttpServlet {
 			pw.println("<td>"+insurance.getInsuranceName()+"</td>");
 			pw.println("<td>"+  insurance.getLocation() + "</td>");
 			pw.println("<td>");
-			pw.println("<a href=DetailedInsurance?postId="+  insurance.getPostId()  +" >Detail Page</a> ");
+			pw.println("<a href=InsurancePage?postId="+  insurance.getPostId()  +" >Detail Page</a> ");
 			pw.println("</td>");
 			pw.println("</tr>");
 		}

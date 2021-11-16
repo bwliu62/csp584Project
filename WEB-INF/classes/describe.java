@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 
-@WebServlet("/AddNote")
+@WebServlet("/describe")
 
 /* 
 	Home class uses the printHtml Function of Utilities class and prints the Header,LeftNavigationBar,
@@ -16,7 +16,7 @@ import java.util.*;
 
 */
 
-public class AddNote extends HttpServlet {
+public class describe extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();

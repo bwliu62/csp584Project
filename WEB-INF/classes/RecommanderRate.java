@@ -67,7 +67,7 @@ public class RecommanderRate extends HttpServlet {
                 pw.println("<td>"+  doctor.getLocation() + "</td>");
                 pw.println("<td>"+  i + "</td>");
                 pw.println("<td>");
-                pw.println("<a href=DetailedDoctor?postId="+  doctor.getPostId()  +" >Detail Page</a> ");
+                pw.println("<a href=DoctorPage?postId="+  doctor.getPostId()  +" >Detail Page</a> ");
                 pw.println("</td>");
                 pw.println("</tr>");
                 i++;            

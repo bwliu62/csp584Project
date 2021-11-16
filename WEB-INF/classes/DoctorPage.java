@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.*;
 
 
-@WebServlet("/DetailedHospital")
+@WebServlet("/DoctorPage")
 
 /* 
 	Home class uses the printHtml Function of Utilities class and prints the Header,LeftNavigationBar,
@@ -16,21 +16,21 @@ import java.util.*;
 
 */
 
-public class DetailedHospital extends HttpServlet {
+public class DoctorPage extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();		
 	
 		Utilities utility = new Utilities(request,pw);
-		Hospital hospital ;
+		Doctor doctor ;
 		String postId;
 		if  (request.getAttribute("data") != null) {
-			hospital = (Hospital) request.getAttribute("data");
-			postId = hospital.getPostId()+"";
+			doctor = (Doctor) request.getAttribute("data");
+			postId = doctor.getPostId()+"";
 		} else {
 			postId = request.getParameter("postId");
 
-			hospital = MySqlDataStoreUtilities.getHospital(Integer.parseInt(postId));
+			doctor = MySqlDataStoreUtilities.getDoctor(Integer.parseInt(postId));
 		}
 
 
@@ -43,7 +43,7 @@ public class DetailedHospital extends HttpServlet {
 		pw.println("function initMap() {");
 
 		// Lat Long go here
-		pw.println("const myLatLng = { lat: "+hospital.getLocationLat()+", lng: "+ hospital.getLocationLong() +" };");
+		pw.println("const myLatLng = { lat: "+doctor.getLat()+", lng: "+ doctor.getLongt() +" };");
 		pw.println("const map = new google.maps.Map(document.getElementById('map'), {");
 		pw.println("zoom: 10,");
 		pw.println("center: myLatLng,");
@@ -58,21 +58,21 @@ public class DetailedHospital extends HttpServlet {
 		pw.println("<div class='9u'>");
 		pw.println("<section>");
 		pw.println("<header>");
-		pw.println("<div align='center'><section><h2>Hospital INFORMATION</h2></section></div><hr>");
+		pw.println("<div align='center'><section><h2>Doctor INFORMATION</h2></section></div><hr>");
 		pw.println("<table style='width:100% '>");
-		pw.println("<tr><th>PostTime</th><th>Hospital Name</th><th>Address</th></tr>");
+		pw.println("<tr><th>RealName</th><th>Department</th><th>Address</th><th>Location</th></tr>");
 		//Real value
-		pw.println("<tr><td>"+ hospital.getPostTime()  +"</td><td>"+ hospital.getHospitalName()  +"</td><td>"+ hospital.getAddress() +"</td></tr>");
+		pw.println("<tr><td>" + doctor.getRealName()  +"</td><td>"+ doctor.getDepartment() +"</td><td>"+ doctor.getAddress() +"</td><td>"+ doctor.getLocation() +"</td></tr>");
 
-		pw.println("<tr><th>Location</th><th>OpenTime</th><th>Close Time</th><th>Book Service</th></tr>");
+		pw.println("<tr><th>OpenTime</th><th>Close Time</th><th>Book Service</th></tr>");
 		//Real value
-		pw.println("<tr><td>"+ hospital.getLocation()   +"</td><td>"+  hospital.getOpenTime()+"</td><td> "+  hospital.getCloseTime()+"</td><td>");
+		pw.println("<tr><td>"+  doctor.getOpenTime()+"</td><td> "+  doctor.getCloseTime()+"</td><td>");
 
 		if (!utility.isLoggedin()) {
 
 		} else {
 			User user = utility.getUser();
-			pw.println("<form method='Post' action='DetailedHospital'>");
+			pw.println("<form method='Post' action='DoctorPage'>");
 			pw.println("<input type='date' name='date' value=''></input>");
 			
 			pw.println("<select name='bookTime' class='input'><option value='9:00' selected>9:00</option><option value='10:00' selected>10:00</option>");
@@ -82,7 +82,7 @@ public class DetailedHospital extends HttpServlet {
 			pw.println("<option value='20:00' selected>20:00</option></select>");
 	
 			//DoctorID
-			pw.println("<input type='hidden' name='hospitalId' value='"+ hospital.getHospitalId()  +  "'></input>");
+			pw.println("<input type='hidden' name='doctorId' value='"+ doctor.getDoctorId()  +  "'></input>");
 			//CustomerId
 			pw.println("<input type='hidden' name='customerId' value='"+ user.getId()  +"'></input>");
 			pw.println("<input type='hidden' name='postId' value='"+ postId  +"'></input>");
@@ -105,7 +105,7 @@ public class DetailedHospital extends HttpServlet {
 			// pw.println("<button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;");
 			// pw.println("text-decoration: none;display: inline-block;font-size: 16px;'><a href='PostDoctorReview?doctorId='"+doctor.getDoctorId()+"&postId="+doctor.getPostId()+">Add Review</a></button>");
 	
-			pw.println("<a href='PostHospitalReview?hospitalId="+hospital.getHospitalId()+"&postId="+hospital.getPostId()+"'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;");
+			pw.println("<a href='PostDoctorReview?doctorId="+doctor.getDoctorId()+"&postId="+doctor.getPostId()+"'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;");
 			pw.println("text-decoration: none;display: inline-block;font-size: 16px;'>Add Review</button></a>");
 			
 			
@@ -124,10 +124,10 @@ public class DetailedHospital extends HttpServlet {
 		pw.println("<tr><th>Review</th><th>Rate</th><th>Date</th></tr>");
 
 
-		HashMap<String, ArrayList<Review>> hm =MongoDBDataStoreUtilities.selectHospitalReview();
+		HashMap<String, ArrayList<Review>> hm =MongoDBDataStoreUtilities.selectDoctorReview();
 		for (Map.Entry<String, ArrayList<Review>> entry: hm.entrySet() ){
 			
-			if (entry.getKey().equals(hospital.getHospitalId()+"")) {
+			if (entry.getKey().equals(doctor.getDoctorId()+"")) {
 				for (Review r :entry.getValue()  ) {
 					// System.out.println(r.getId() + ":" + r.getReviewdate() + ":" + r.getReviewtext() + ":" + r.getReviewrating());
 					pw.println("<tr>");
@@ -141,7 +141,15 @@ public class DetailedHospital extends HttpServlet {
 
 
 
-
+		// //for each
+		// 	//1
+		// 	pw.println("<tr>");
+		// 	pw.println("<td>Bad!!!!!!!</td><td>3</td><td>201510-21</td>");
+		// 	pw.println("</tr>");
+		// 	//2
+		// 	pw.println("<tr>");
+		// 	pw.println("<td>Bad!!!!!!!</td><td>3</td><td>201510-21</td>");
+		// 	pw.println("</tr>");
 		
 		pw.println("</table></section></div>");
 
@@ -153,17 +161,18 @@ public class DetailedHospital extends HttpServlet {
 
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String hospitalId = request.getParameter("hospitalId");
+		String doctorId = request.getParameter("doctorId");
 		String customerId = request.getParameter("customerId");
 		String bookTime = request.getParameter("bookTime");
 		String date = request.getParameter("date");
 		String postId = request.getParameter("postId");
-		MySqlDataStoreUtilities.insertBook(Integer.parseInt(hospitalId),Integer.parseInt(customerId), date, bookTime);
+		System.out.println(doctorId + " | " + customerId + " | " + bookTime + " | " + date );
+		MySqlDataStoreUtilities.insertBook(Integer.parseInt(doctorId),Integer.parseInt(customerId), date, bookTime);
 
 
 
 
-		response.sendRedirect("DetailedHospital?postId="+postId);
+		response.sendRedirect("DoctorPage?postId="+postId);
 	}
 
 

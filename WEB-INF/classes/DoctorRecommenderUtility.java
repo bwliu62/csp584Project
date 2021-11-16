@@ -97,30 +97,7 @@ public class DoctorRecommenderUtility{
 		}
 		return doctor;			
 	}
-	
-	// public static Product getProduct(String product){
-	// 	Product prodObj = new Product();
-	// 	try 
-	// 	{
-	// 		String msg = getConnection();
-	// 		String selectProd="select * from  Doctordetails where doctorId=?";
-	// 		PreparedStatement pst = conn.prepareStatement(selectProd);
-	// 		pst.setString(1,product);
-	// 		ResultSet rs = pst.executeQuery();
-		
-	// 		while(rs.next())
-	// 		{	
-	// 			prodObj = new Product(rs.getString("ProductType"),rs.getString("productName"),rs.getDouble("productPrice"), rs.getString("productManufacturer"),rs.getString("productCondition"), rs.getDouble("productDiscount"), rs.getInt("productRebate"));
-	// 		}
-	// 		rs.close();
-	// 		pst.close();
-	// 		conn.close();
-	// 	}
-	// 	catch(Exception e)
-	// 	{
-	// 	}
-	// 	return prodObj;	
-	// }
+
 
 
 

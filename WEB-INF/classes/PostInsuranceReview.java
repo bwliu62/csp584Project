@@ -79,7 +79,7 @@ public class PostInsuranceReview extends HttpServlet {
 		MongoDBDataStoreUtilities.insertInsuranceReview(insuranceId, rate, timestamp+"", review);
 
 
-		response.sendRedirect("DetailedInsurance?postId="+postId);
+		response.sendRedirect("InsurancePage?postId="+postId);
 	}
 
 }
