@@ -20,9 +20,6 @@ public class BookingCustomer extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		PrintWriter pw = response.getWriter();
-
-		// List<Book> bookList = MySqlDataStoreUtilities.viewCustomerBook(1);	
-		// List<Book> bookList = MySqlDataStoreUtilities.viewBook();		
 	
 		Utilities utility = new Utilities(request,pw);
 		User user=utility.getUser();
@@ -32,6 +29,7 @@ public class BookingCustomer extends HttpServlet {
 
 
 		pw.println("<div class='6u'><section><header><h2>Review Booking</h2><span class='byline'></span> <br><hr><header></section>");
+		int i = 0;
 		pw.println("<div><table><tr><th>BookId</th><th>Customer Name</th><th>Provider Name</th><th>Provider Type</th><th>Date</th><th>Time</th><th>Cancel</th></tr>");
 		for (Book book : bookList) {
 			pw.println("<form method='POST' action='BookingCustomer'><tr>");

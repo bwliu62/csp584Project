@@ -19,13 +19,18 @@ public class ApiUtilities {
 
     public static ArrayList<News> getHealthNews() {
 
+        int flag = 0;
         StringBuilder sb = new StringBuilder();
         try {
             URL url = new URL(
                     "https://newsapi.org/v2/top-headlines?sources=medical-news-today&language=en&apiKey=8a20eb2141dd44ca9ddb26f244c82287");
             HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            if (flag == 0) {
+                flag = 1;
+            }
             conn.setRequestMethod("GET");
             InputStream is = conn.getInputStream();
+
             BufferedReader reader = new BufferedReader((new InputStreamReader(is)));
             String line;
             while ((line = reader.readLine()) != null) {
@@ -42,12 +47,16 @@ public class ApiUtilities {
         ArrayList<News> newsList = new ArrayList<>();
         try {
             JSONObject jObjMain = new JSONObject(s);
+            int j = 0;
             JSONArray articles = jObjMain.getJSONArray("articles");
             for (int i = 0; i < articles.length(); i++) {
                 JSONObject newsObj = (JSONObject) articles.get(i);
                 News news = new News();
-                news.setContent(newsObj.getString("content"));
-                news.setAuthor(newsObj.getString("author"));
+                if (j == 0) {
+                    news.setContent(newsObj.getString("content"));
+                    news.setAuthor(newsObj.getString("author"));
+                }
+
                 news.setDescription(newsObj.getString("description"));
 
                 String formatDate;
@@ -66,7 +75,6 @@ public class ApiUtilities {
                 news.setUrl(newsObj.getString("url"));
                 newsList.add(news);
             }
-            System.out.println("newsList.size(): " + newsList.size());
             return newsList;
         } catch (Exception e) {
             e.printStackTrace();

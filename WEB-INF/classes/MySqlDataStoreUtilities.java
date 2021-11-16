@@ -77,7 +77,7 @@ public class MySqlDataStoreUtilities {
 					+" (22,'Ken','ken','ken@gmail.com','doctor','110 E 40th St Floor 6, New York, NY 10016','40.7504117','73.980187','New York, NY'),"
 					+" (23,'Wong','wong','wong@gmail.com','doctor','945 Hildebrand Ln NE, Bainbridge Island, WA 98110','47.6336187','-122.5199271','Bainbridge Island, WA'),"
 					+" (24,'John','john','john@gmail.com','doctor','9155 SW Barnes Rd #430, Portland, OR 97225','45.510411','-122.772308','Portland, OR'),"
-					+" (25,'Erin McCann','1234','erin@gmail.com','doctor','1658 N Milwaukee Ave, Chicago, IL 60647','41.911521','-87.6820213','Chicago, IL'),"
+					+" (25,'Erin McCann','1234','erin@gmail.com','doctor','1658 N Milwaukee Ave, Chicago, IL 60647','41.911521','-87.6820203','Chicago, IL'),"
 					+" (26,'Jennifer N. Ouchi','1234','jennifer@gmail.com','doctor','8635 W 3rd St, Los Angeles, CA 90048','34.0739596','-118.3831086','Los Angeles, CA'),"
 					+" (27,'Nayantara','1234','Nayantara@gmail.com','doctor','2250 Hayes St Ste. 612, San Francisco, CA 94117','37.7731512','-122.4556097','San Francisco, CA'),"
 					+" (28,'Liu','1234','liu@gmail.com','doctor','400 Parnassus Ave Suite A-550, San Francisco, CA 94143','37.7645542','-122.4594448','San Francisco, CA'),"
