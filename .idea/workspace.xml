@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="change background color, rename several files">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="fixed mysql error">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/ApiUtilities.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/BookingCustomer.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/BookingCustomer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/BookingCustomer.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/BookingCustomer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/MySqlDataStoreUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedNews.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DetailedNews.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DetailedNews.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DetailedNews.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PersonalProfile.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PersonalProfile.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/PersonalProfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/PersonalProfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/describe.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/describe.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/describe.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/describe.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637083982573</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed mysql error">
+      <created>1637098511113</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1637098511113</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -146,7 +159,8 @@
     <MESSAGE value="UI change for Trending.java. &#10;update all table UIs." />
     <MESSAGE value="change time" />
     <MESSAGE value="change background color, rename several files" />
-    <option name="LAST_COMMIT_MESSAGE" value="change background color, rename several files" />
+    <MESSAGE value="fixed mysql error" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed mysql error" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -34,18 +34,20 @@ public class PersonalProfile extends HttpServlet {
 		pw.println("<header>");
 		pw.println("<div align='center'><section><h2>Personal Information</h2></section></div><hr>");
 		pw.println("<table style='width:100% '>");
-		pw.println("<tr><th>userName</th><th>email</th></tr>");
-		//Real value
-		pw.println("<tr><td>"+ user.getUserName() +"</td><td>"+ user.getEmail()  +"</td></tr>");
 
-		pw.println("<tr><th>usertype</th><th>Location</th></tr>");
-		//Real value
-		pw.println("<tr><td>"+  user.getUsertype()+"</td><td>"+ user.getLocation() +"</td></tr>");
+		pw.println("<tr><th>userName</th></tr>");
+		pw.println("<tr><td>"+ user.getUserName() +"</td></tr>");
+
+		pw.println("<tr><th>Email</th></tr>");
+		pw.println("<tr><td>"+ user.getEmail() +"</td></tr>");
+
+		pw.println("<tr><th>Location</th></tr>");
+		pw.println("<tr><td>"+ user.getLocation() +"</td></tr>");
 
 
-		pw.println("<tr><th>Latitude</th><th>Longitude</th></tr>");
+		pw.println("<tr><th>Latitude & Longitude</th></tr>");
 		//Real value
-		pw.println("<tr><td>"+ user.getLat()  +"</td><td>"+  user.getLongt()   +"</td></tr> ");
+		pw.println("<tr><td>"+ user.getLat() + "   " + user.getLongt() +"</td></tr> ");
 
 
 		pw.println("<tr><th>Address</th></tr>");

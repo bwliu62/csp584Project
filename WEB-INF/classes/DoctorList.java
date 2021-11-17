@@ -36,7 +36,7 @@ public class DoctorList extends HttpServlet {
 		utility.printHtml("Header.html");
 		// pw.println("<script type='text/javascript ' src ='javascript.js'></script>");
 
-
+		pw.println("<h2 style='font-size: 25px;'>We provide you with the most suitable choice!</h2>");
 		if (!utility.isLoggedin()) {
 			HttpSession session = request.getSession(true);
 			System.out.println("LogIn: Not");
@@ -53,7 +53,7 @@ public class DoctorList extends HttpServlet {
 		pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch' ><hr style='width: 82%'><h2 style='font-size: 25px;'> Search Doctor</h2><hr style='width: 82%'>");
 
 		pw.println("<form  method='Get' action='DoctorList' >");
-		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or department or location' size='50' name='searchName' onkeyup='doCompletion()' value='' >");
+		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search here' size='50' name='searchName' onkeyup='doCompletion()' value='' >");
 		pw.println("<div id='auto-row'><table id='complete-table' class='gridtable' style='width: 315px;'></table></div>");
 		pw.println("<button class='btnbuy'>Submit</button>");
 		pw.println("</form>		");

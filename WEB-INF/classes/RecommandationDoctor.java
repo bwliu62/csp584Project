@@ -91,7 +91,7 @@ public class RecommandationDoctor extends HttpServlet {
 		pw.println("}</script>");
 		pw.println("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnfZFSq_y9Rf14NyCxvjgBLSQS3sN-0Q&callback=initMap&libraries=&v=weekly' defer></script>");
 		pw.println("<div class='9u'><section><header><div align='center'><section><h2>Doctors near me</h2></section></div><hr><table style='width:100% '>");
-		pw.println("<tr><th>Name</th><th>Department</th><th>Location</th><th>Distance</th><th>Detailed Page</th></tr>");
+		pw.println("<tr><th>Name</th><th>Department</th><th>Location</th><th>Distance</th><th>Make Reservation</th></tr>");
 
 		for (int i = 0; i < 3; i++) {
 			Doctor doctor = doctors.get(i);
@@ -100,7 +100,7 @@ public class RecommandationDoctor extends HttpServlet {
 			pw.println("<td>"+  doctor.getDepartment() +"</td>");
 			pw.println("<td>"+ doctor.getLocation()  +"</td>");
 			pw.println("<td>" +  Double.parseDouble(String.format("%.2f",  getDistance(user.getLat(), user.getLongt(), doctor.getLat()  ,  doctor.getLongt())    ))      +" miles</td>");
-			pw.println("<td><a href=DoctorPage?postId="+  doctor.getPostId()  +" >Detail Page</a> </td>");
+			pw.println("<td><a href=DoctorPage?postId="+  doctor.getPostId()  +" >Click Here</a> </td>");
 			pw.println("</tr>");			
 		}		
 		pw.println("</table>");

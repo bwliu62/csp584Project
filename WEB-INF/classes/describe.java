@@ -22,15 +22,18 @@ public class describe extends HttpServlet {
 		PrintWriter pw = response.getWriter();
 		String id = request.getParameter("id");
 
-		
+		int i = 0;
 		Utilities utility = new Utilities(request,pw);
 		utility.printHtml("Header.html");
-		pw.println("<div class='9u'><section><header><h2>Add note</h2></header>");
-		pw.println("<form method='post' action='BookingCustomer'>");
-		pw.println("<table style='width:100%'>");
-		pw.println("<tr><td><h3>Note</h3></td><td>");
-		pw.println("<input type='text' name='note' value='' class='input' required></input></td></tr></table>");
-		pw.println("<input type='hidden' name='id' value='"+id+"'>");	
+		switch(i) {
+			case(1) :pw.println("<div class='9u'><section><header><h2>Add note</h2></header>");
+			case(2) :pw.println("<form method='post' action='BookingCustomer'>");
+			case(3) :pw.println("<table style='width:100%'>");
+			case(4) :pw.println("<tr><td><h3>Note</h3></td><td>");
+			case(5) :pw.println("<input type='text' name='note' value='' class='input' required></input></td></tr></table>");
+			case(6) :pw.println("<input type='hidden' name='id' value='"+id+"'>");
+		}
+
 
 		pw.println("<input type='submit' class='btnbuy' name='addNote' value='addNote'style='float: right;height: 20px margin: 20px; margin-right: 10px;'></input>");
 		pw.println("</form></section></div>");

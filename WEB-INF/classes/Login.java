@@ -36,17 +36,17 @@ public class Login extends HttpServlet {
 			pw.print("<h4 style='color:red'>"+session.getAttribute("login_msg")+"</h4>");
 			session.removeAttribute("login_msg");
 		}
-		pw.println("<form method='post' action='Home'>");
-		pw.println("<table style='width:100%'><tr style='border-bottom:5px '><td><h3>Username</h3></td><td>");
+		pw.println("<form method='post' action='Home'>" +
+					"<table style='width:100%'><tr style='border-bottom:5px '><td><h3>Username</h3></td><td>" +
 		
-		pw.println("<input type='text' name='username' value='' class='input' required></input></td></tr>");
-		pw.println("<tr><td><h3>Password</h3></td><td>");
-		pw.println("<input type='password' name='password' value='' class='input' required></input></td></tr>");
-		pw.println("<tr><td></td>");
-		pw.println("<td><input type='submit' name='action' class='btnbuy' value='Login'style='float: right;height: 20px margin: 20px; margin-right: 10px;'></input></td></tr><tr><strong>");
-		pw.println("<a class='' href='Signup'style='float: right;height: 20px margin: 20px;'> New User? Registerhere!</a>");
-		pw.println("</strong></td></tr>");
-		pw.println("</table></form></section></div>");
+		 			"<input type='text' name='username' value='' class='input' required></input></td></tr>" +
+		 			"<tr><td><h3>Password</h3></td><td>" +
+		 			"<input type='password' name='password' value='' class='input' required></input></td></tr>" +
+		 			"<tr><td></td>" +
+		 			"<td><input type='submit' name='action' class='btnbuy' value='Login'style='float: right;height: 20px margin: 20px; margin-right: 10px;'></input></td></tr><tr><strong>" +
+		 			"<a class='' href='Signup'style='float: right;height: 20px margin: 20px;'> New User? Registerhere!</a>" +
+		 			"</strong></td></tr>" +
+					"</table></form></section></div>");
 
 		utility.printHtml("Footer.html");
 
