@@ -73,7 +73,7 @@ public class Trending extends HttpServlet {
 
 		pw.println("<div class='9u'><section><br>");
 
-		pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch'><hr style='width: 82%'><h2 style='font-size: 25px;'>Trending</h2><hr style='width: 82%'>");
+		pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch'><hr style='width: 82%'><h2 style='font-size: 25px;'>Most highly rated doctors:</h2><hr style='width: 82%'>");
 
 		pw.println("<table id='table1' style='width:83%; height:600px; display: inline-block; overflow: auto; border-collapse: collapse;'>");
 		pw.println("<tr><th><b>DoctorName </b></th><th><b>Department </b></th><th><b>Location </b></th><th><b>Rate </b></th><th><b>DeatailPage</b></th></tr>		");

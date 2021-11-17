@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="several minor changes">
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="deleted &quot;search doctor&quot; title, changed the page a lot!">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637108660860</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="deleted &quot;search doctor&quot; title, changed the page a lot!">
+      <created>1637109552615</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1637109552615</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -158,7 +167,8 @@
     <MESSAGE value="change background color, rename several files" />
     <MESSAGE value="fixed mysql error" />
     <MESSAGE value="several minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="several minor changes" />
+    <MESSAGE value="deleted &quot;search doctor&quot; title, changed the page a lot!" />
+    <option name="LAST_COMMIT_MESSAGE" value="deleted &quot;search doctor&quot; title, changed the page a lot!" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

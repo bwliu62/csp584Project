@@ -47,6 +47,7 @@ public class DoctorList extends HttpServlet {
 				pw.println("<div class='updateDoctor' style='height:0px'><b>Add new doctor</b>");
 				pw.println("<div> <a href='PostDoctor'><button type='button' class='btn btn-primary' style='background-color: #009879;  border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Post information</button></a></div>");
 				pw.println("</div>");
+				pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch' ><hr style='width: 82%'><h2 style='font-size: 25px;'> find doctor here:</h2><hr style='width: 82%'>");
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}

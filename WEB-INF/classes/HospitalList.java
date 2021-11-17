@@ -35,8 +35,9 @@ public class HospitalList extends HttpServlet {
 
 		utility.printHtml("Header.html");
 		// pw.println("<script type='text/javascript ' src ='javascript.js'></script>");
+		pw.println("<h2 style='font-size: 25px;'>We provide you with the most suitable choice!</h2>");
 
-		pw.println("<div class='9u'><section><a href=DoctorList>Search Doctor</a><br><a href=InsuranceList>Search Insurance</a><br>");
+
 		if (!utility.isLoggedin()) {
 			HttpSession session = request.getSession(true);
 			System.out.println("LogIn: Not");
@@ -48,7 +49,7 @@ public class HospitalList extends HttpServlet {
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		pw.println("<section style='margin-left: 136px;'><article id='hospitalsearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Hospital</h2><hr style='width: 80%'>");
+		//pw.println("<section style='margin-left: 136px;'><article id='hospitalsearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Hospital</h2><hr style='width: 80%'>");
 
 		pw.println("<form  method='Get' action='HospitalList' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or location' size='50' name='searchName'  value='' >");
@@ -67,6 +68,8 @@ public class HospitalList extends HttpServlet {
 			pw.println("</td>");
 			pw.println("</tr>");
 		}
+
+		pw.println("<div class='9u'><section><a href=DoctorList>Search Doctor</a><br><a href=InsuranceList>Search Insurance</a><br>");
 
 
 
