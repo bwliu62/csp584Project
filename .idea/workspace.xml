@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="deleted &quot;search doctor&quot; title, changed the page a lot!">
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Trending.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InventoryReport$ProductSales.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InventoryReport$ProductSales.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InventoryReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InventoryReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InventoryReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InventoryReport.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637109552615</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1">
+      <created>1637110075864</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1637110075864</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -168,7 +173,8 @@
     <MESSAGE value="fixed mysql error" />
     <MESSAGE value="several minor changes" />
     <MESSAGE value="deleted &quot;search doctor&quot; title, changed the page a lot!" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted &quot;search doctor&quot; title, changed the page a lot!" />
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

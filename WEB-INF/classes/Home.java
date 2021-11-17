@@ -51,7 +51,7 @@ public class Home extends HttpServlet {
 		pw.print("<p><a href='DetailedNews?Title=" + newsList.get(0).getTitle().replaceAll("[^a-zA-Z0-9_-]", "") + "'><img src="
 				+ newsList.get(0).getUrlToImage() + " 	alt='' width='550' height='300'></a></p>");
 		pw.print("<a href='DetailedNews?Title=" + newsList.get(0).getTitle().replaceAll("[^a-zA-Z0-9_-]", "")
-				+ "' class='button'>More Details</a></section></div>");
+				+ "'></a></section></div>");
 		// Other news
 		//pw.print("<div class='3u'><section class='sidebar'><header><h2>Other NEWS</h2></header>");
 		pw.print("<ul class='style2'>");

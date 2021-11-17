@@ -19,24 +19,13 @@ public class InventoryReport extends HttpServlet {
 
         PrintWriter pw = response.getWriter();
 
-
-
-
-
-
-		/* Header, Left Navigation Bar are Printed.
-
-		All the soundSystem and soundSystem information are dispalyed in the Content Section
-
-		and then Footer is Printed*/
-
         Utilities utility = new Utilities(request,pw);
         utility.printHtml("Header.html");
 
 
 		pw.println("<div class='6u'>");
 
-        pw.print("<h2>Top provider</h2>");
+        pw.print("<h2>Most popular Doctors</h2>");
         pw.print("<table>");
         pw.print("<tr>");
         pw.print("<td>UserName:</td>");
@@ -54,7 +43,7 @@ public class InventoryReport extends HttpServlet {
         pw.print("<br>");
         pw.print("<br>");
         pw.print("<br>");
-        pw.print("<h2>Top date</h2>");
+        pw.print("<h2>Date with most reservations</h2>");
         pw.print("<table>");
         pw.print("<tr>");
         pw.print("<td>Date:</td>");
