@@ -50,7 +50,7 @@ public class DoctorList extends HttpServlet {
 			}
 			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch' ><hr style='width: 82%'><h2 style='font-size: 25px;'> Search Doctor</h2><hr style='width: 82%'>");
+		//pw.println("<section style='margin-left: 136px; margin-top: 81px;'><article id='doctorsearch' ><hr style='width: 82%'><h2 style='font-size: 25px;'> find doctor here:</h2><hr style='width: 82%'>");
 
 		pw.println("<form  method='Get' action='DoctorList' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search here' size='50' name='searchName' onkeyup='doCompletion()' value='' >");

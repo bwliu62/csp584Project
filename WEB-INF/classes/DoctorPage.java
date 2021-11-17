@@ -10,11 +10,6 @@ import java.util.*;
 
 @WebServlet("/DoctorPage")
 
-/* 
-	Home class uses the printHtml Function of Utilities class and prints the Header,LeftNavigationBar,
-	Content,Footer of Game Speed Application.
-
-*/
 
 public class DoctorPage extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -138,18 +133,6 @@ public class DoctorPage extends HttpServlet {
 			}
 
 		}
-
-
-
-		// //for each
-		// 	//1
-		// 	pw.println("<tr>");
-		// 	pw.println("<td>Bad!!!!!!!</td><td>3</td><td>201510-21</td>");
-		// 	pw.println("</tr>");
-		// 	//2
-		// 	pw.println("<tr>");
-		// 	pw.println("<td>Bad!!!!!!!</td><td>3</td><td>201510-21</td>");
-		// 	pw.println("</tr>");
 		
 		pw.println("</table></section></div>");
 
