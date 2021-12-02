@@ -39,7 +39,7 @@ public class RecommandationDoctor extends HttpServlet {
 
 		if(!utility.isLoggedin()){
 			HttpSession session = request.getSession(true);				
-			session.setAttribute("login_msg", "Please Login to do actions");
+			session.setAttribute("login_msg", "Login here");
 			response.sendRedirect("Login");
 			return;
 		}

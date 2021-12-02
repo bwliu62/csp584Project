@@ -64,7 +64,8 @@ public class Utilities extends HttpServlet {
                 } else {
                     result = result + "<li><a href='PersonalProfile'>Hello," + user.getUserName() + "</a></li>";
                     result = result
-                            + "<li><a href='BookingCustomer'>Reservation</a></li><li><a href='Setting'>Setting</a></li><li><a href='Logout'>Logout</a></li>";
+                            //+ "<li><a href='BookingCustomer'>Reservation</a></li><li><a href='Setting'>Setting</a></li><li><a href='Logout'>Logout</a></li>";
+                            + "<li><a href='BookingCustomer'>Reservation</a></li><li><a href='Logout'>Logout</a></li>";
                 }
 
             } else {

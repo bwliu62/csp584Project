@@ -44,17 +44,17 @@ public class HospitalPage extends HttpServlet {
 
 		// Lat Long go here
 		pw.println("const myLatLng = { lat: "+hospital.getLocationLat()+", lng: "+ hospital.getLocationLong() +" };");
-		pw.println("const map = new google.maps.Map(document.getElementById('map'), {");
+		//pw.println("const map = new google.maps.Map(document.getElementById('map'), {");
 		pw.println("zoom: 10,");
 		pw.println("center: myLatLng,");
 		pw.println("});");
-		pw.println("new google.maps.Marker({");
+		//pw.println("new google.maps.Marker({");
 		pw.println("position: myLatLng,");
 		pw.println("map,");
 		pw.println("title: 'Hello World!',");
 		pw.println("});");
 		pw.println("} </script>");
-		pw.println("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnfZFSq_y9Rf14NyCxvjgBLSQS3sN-0Q&callback=initMap&libraries=&v=weekly' defer></script>");
+		//pw.println("<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAHnfZFSq_y9Rf14NyCxvjgBLSQS3sN-0Q&callback=initMap&libraries=&v=weekly' defer></script>");
 		pw.println("<div class='9u'>");
 		pw.println("<section>");
 		pw.println("<header>");
@@ -94,7 +94,7 @@ public class HospitalPage extends HttpServlet {
 
 
 		pw.println("</td></tr></table>");
-		pw.println("<span class='byline'></span> <br><div id='map' style='height:400px; width:100%'></div></section>");
+		//pw.println("<span class='byline'></span> <br><div id='map' style='height:400px; width:100%'></div></section>");
 		pw.println("<section align='center'><header><h2>Review</h2><hr>");
 
 
