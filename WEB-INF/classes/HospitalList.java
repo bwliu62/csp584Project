@@ -34,7 +34,6 @@ public class HospitalList extends HttpServlet {
 
 
 		utility.printHtml("Header.html");
-		// pw.println("<script type='text/javascript ' src ='javascript.js'></script>");
 		pw.println("<h2 style='font-size: 25px;'>We provide you with the most suitable choice!</h2>");
 
 
@@ -47,9 +46,7 @@ public class HospitalList extends HttpServlet {
 			if (user.getUsertype().equals("hospital company")) {
 				pw.println("<a href='PostHospital'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Post information</button></a>");
 			}
-			// System.out.println("User|" + user.getUserName() + " | " + user.getPassword());
 		}
-		//pw.println("<section style='margin-left: 136px;'><article id='hospitalsearch'><hr style='width: 80%'><h2 style='font-size: 25px;'> Search Hospital</h2><hr style='width: 80%'>");
 
 		pw.println("<form  method='Get' action='HospitalList' >");
 		pw.println("<input type='text' class='input	' id='searchId' placeholder='Search Name or location' size='50' name='searchName'  value='' >");
@@ -83,7 +80,6 @@ public class HospitalList extends HttpServlet {
 		if (request.getParameter("hospital").equals("Create")) {
 			String hospitalId = request.getParameter("hospitalId");
 			String realName = request.getParameter("realName");
-			// String department = request.getParameter("department");
 			String address = request.getParameter("address");
 			String lat="";
 			String longt="";

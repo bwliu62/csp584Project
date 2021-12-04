@@ -97,19 +97,10 @@ public class DoctorPage extends HttpServlet {
 			System.out.println("LogIn: Not");
 		} else {
 			User user = utility.getUser();
-			// pw.println("<button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;");
-			// pw.println("text-decoration: none;display: inline-block;font-size: 16px;'><a href='PostDoctorReview?doctorId='"+doctor.getDoctorId()+"&postId="+doctor.getPostId()+">Add Review</a></button>");
-	
+
 			pw.println("<a href='PostDoctorReview?doctorId="+doctor.getDoctorId()+"&postId="+doctor.getPostId()+"'><button type='button' class='btn btn-primary' style='background-color: #4CAF50;  border: none;color: white;padding: 10px 20px;text-align: center;");
 			pw.println("text-decoration: none;display: inline-block;font-size: 16px;'>Add Review</button></a>");
-			
-			
-			// pw.println("<button type='button' class='btn btn-info' style='background-color: #008CBA;  border: none;color: white;padding: 10px 20px;text-align: center;");
-			// pw.println("text-decoration: none;display: inline-block;font-size: 16px;'>Modify Review</button>");
-	
-	
-			// pw.println("<button type='button' class='btn btn-danger ' style='  margin: 20px 2px; background-color: #FF0000;  border: none;color: white;padding: 10px 20px;");
-			// pw.println("text-align: center;text-decoration: none;display: inline-block;font-size: 16px;'>Remove Review</button>");
+
 			pw.println("<hr>");
 		}
 
@@ -124,7 +115,6 @@ public class DoctorPage extends HttpServlet {
 			
 			if (entry.getKey().equals(doctor.getDoctorId()+"")) {
 				for (Review r :entry.getValue()  ) {
-					// System.out.println(r.getId() + ":" + r.getReviewdate() + ":" + r.getReviewtext() + ":" + r.getReviewrating());
 					pw.println("<tr>");
 					pw.println("<td>"+ r.getReviewtext() +"</td><td> "+ r.getReviewrating()  + " </td><td>"+ r.getReviewdate()  +"</td>");
 					pw.println("</tr>");

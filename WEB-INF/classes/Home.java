@@ -111,19 +111,7 @@ public class Home extends HttpServlet {
 			
 
 		} else if (request.getParameter("action").equals("AddReview")) {
-			// String review = request.getParameter("review");
-			// String rate = request.getParameter("rate");
-			// // System.out.println("AddReview : " + review + ":" + rate);
-			// SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
-			// Timestamp timestamp = new Timestamp(System.currentTimeMillis());
 
-			// MongoDBDataStoreUtilities.insertDoctorReview("1", rate, timestamp+"", review);
-			// HashMap<String, ArrayList<Review>> hm =MongoDBDataStoreUtilities.selectDoctorReview();
-			// for (Map.Entry<String, ArrayList<Review>> entry: hm.entrySet() ){
-			// 	for (Review r :entry.getValue()  ) {
-			// 		System.out.println(r.getId() + ":" + r.getReviewdate() + ":" + r.getReviewtext() + ":" + r.getReviewrating());
-			// 	}
-			// }
 
 		} else if ( request.getParameter("action").equals("Modify")) {
 			PrintWriter pw = response.getWriter();

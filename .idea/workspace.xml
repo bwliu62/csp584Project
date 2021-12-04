@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="delete button">
+    <list default="true" id="4daa6055-570e-4ac8-9452-28adeeb2bf99" name="Changes" comment="verison 1">
+      <change afterPath="$PROJECT_DIR$/ProductRecommender.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/matrixFactorizationBasedRecommendations.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongodata_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongodata_train.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProductRecommender.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Header2.html" beforeDir="false" afterPath="$PROJECT_DIR$/Header2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/DoctorPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WEB-INF/classes/HospitalPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/HospitalPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InsurancePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InsurancePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/InsurancePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/InsurancePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/RecommandationDoctor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Utilities.class" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Utilities.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WEB-INF/classes/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/WEB-INF/classes/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrixFactorizationBasedRecommendations.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodata_test.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mongodata_train.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j_appointment.csv" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j_appointment.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/neo4j_doctor.csv" beforeDir="false" afterPath="$PROJECT_DIR$/neo4j_doctor.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/HealthNews.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Location.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Search.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/Trending.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/img01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/restaurant.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/site/phones.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/sports_bar.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/trending.jpeg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1637111151570</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="verison 1">
+      <created>1638420520033</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1638420520033</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -195,7 +204,8 @@
     <MESSAGE value="deleted &quot;search doctor&quot; title, changed the page a lot!" />
     <MESSAGE value="1" />
     <MESSAGE value="delete button" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete button" />
+    <MESSAGE value="verison 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="verison 1" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
